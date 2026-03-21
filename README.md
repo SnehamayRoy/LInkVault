@@ -71,7 +71,6 @@ Frontend runs at `http://localhost:5173`.
 ## Design Decisions
 
 - Links are generated with `nanoid` to make them hard to guess.
-- MongoDB TTL index is used for auto-expiry of documents.
 - File cleanup runs periodically to delete expired uploads from disk.
 - JWT auth lets users manage their own vaults without removing link-based access.
 - File validation uses a 10 MB size limit and a safe default MIME allowlist.
